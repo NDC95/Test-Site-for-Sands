@@ -80,7 +80,7 @@ contactForm.addEventListener('submit', async (event) => {
     return;
   }
 
-  formStatus.style.color = '#247c51';
+  formStatus.style.color = '#3c8f8b';
   formStatus.textContent = files.length
     ? `Sending your request with ${files.length} file${
         files.length === 1 ? '' : 's'
@@ -119,7 +119,7 @@ contactForm.addEventListener('submit', async (event) => {
       throw new Error(result.message || 'The request could not be sent.');
     }
 
-    formStatus.style.color = '#247c51';
+    formStatus.style.color = '#3c8f8b';
     formStatus.textContent =
       '✅ Thank you! Your request has been sent successfully.';
 
